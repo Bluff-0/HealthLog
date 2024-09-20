@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "main": "frontend/index.js",
   "scripts": {
-    "install": "cd frontend && npm i && cd ..",
-    "test": "cd frontend && npm run test && cd ..",
+    "install": "cd frontend && npm i",
+    "test": "cd frontend && npm run test",
     "start": "cd frontend  && npm run start",
     "predeploy": "npm run build",
     "deploy": "cd frontend  && npm run deploy",
