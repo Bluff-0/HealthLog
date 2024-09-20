@@ -7,6 +7,16 @@ on:
     branches: [ "main" ]
 
 jobs:
+  git:
+    runs-on: ubuntu-latest
+    steps:
+      - name: set git config
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+          git config --global user.name "$(gh api /users/${GITHUB_ACTOR} | jq .name -r)"
+          git config -l
   build:
     runs-on: ubuntu-latest
 
