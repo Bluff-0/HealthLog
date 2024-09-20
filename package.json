@@ -1,0 +1,20 @@
+{
+  "name": "healthlog",
+  "version": "0.0.1",
+  "main": "frontend/index.js",
+  "scripts": {
+    "install": "cd frontend && npm i && cd .. && npm i",
+    "test": "cd frontend && npm run test && cd ..",
+    "start": "cd frontend  && npm run start",
+    "predeploy": "npm run build",
+    "deploy": "cd frontend  && npm run deploy",
+    "build": "cd frontend  && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "HealthLog"
+  },
+  "author": "NxWd",
+  "license": "Apache-2.0",
+  "description": ""
+}
